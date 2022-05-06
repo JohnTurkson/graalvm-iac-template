@@ -60,12 +60,16 @@ ksp {
     arg("HANDLER_LOCATION", "../server/build/lambda/image/${project.name}.zip")
 }
 
-nativeBuild {
-    mainClass.set("com.amazonaws.services.lambda.runtime.api.client.AWSLambda")
-    buildArgs.add("--verbose")
-    buildArgs.add("--no-fallback")
-    buildArgs.add("--enable-url-protocols=http")
-    buildArgs.add("--initialize-at-build-time=org.slf4j")
+graalvmNative {
+    binaries {
+        named("main") {
+            mainClass.set("com.amazonaws.services.lambda.runtime.api.client.AWSLambda")
+            verbose.set(true)
+            buildArgs.add("--no-fallback")
+            buildArgs.add("--enable-url-protocols=http")
+            buildArgs.add("--initialize-at-build-time=org.slf4j")
+        }
+    }
 }
 
 tasks.register<Zip>("buildLambdaImage") {
