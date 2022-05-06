@@ -10,9 +10,9 @@ dependencies {
     implementation(project(":common"))
     implementation(project(":server"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
-    implementation("software.amazon.awscdk:aws-cdk-lib:2.22.0")
-    implementation("software.amazon.awscdk:apigatewayv2-alpha:2.22.0-alpha.0")
-    implementation("software.amazon.awscdk:apigatewayv2-integrations-alpha:2.22.0-alpha.0")
+    implementation("software.amazon.awscdk:aws-cdk-lib:2.23.0")
+    implementation("software.amazon.awscdk:apigatewayv2-alpha:2.23.0-alpha.0")
+    implementation("software.amazon.awscdk:apigatewayv2-integrations-alpha:2.23.0-alpha.0")
 }
 
 application {
