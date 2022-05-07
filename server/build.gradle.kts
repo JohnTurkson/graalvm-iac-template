@@ -73,11 +73,11 @@ graalvmNative {
 }
 
 tasks.register<Zip>("buildLambdaImage") {
-    dependsOn("nativeBuild")
+    dependsOn("nativeCompile")
     dependsOn("buildLambdaBootstrap")
     archiveFileName.set("${project.name}.zip")
     destinationDirectory.set(file("$buildDir/lambda/image"))
-    from("$buildDir/native/nativeBuild")
+    from("$buildDir/native/nativeCompile")
     from("$buildDir/lambda/bootstrap")
 }
 
