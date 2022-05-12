@@ -8,10 +8,10 @@ group = "com.johnturkson.template.common"
 version = "1.0.0-SNAPSHOT"
 
 dependencies {
-    implementation("com.johnturkson.cdk:cdk-generator:0.0.2")
-    ksp("com.johnturkson.cdk:cdk-generator:0.0.2")
+    implementation("com.johnturkson.cdk:cdk-generator:0.0.3")
+    ksp("com.johnturkson.cdk:cdk-generator:0.0.3")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
     compileOnly("software.amazon.awscdk:aws-cdk-lib:2.23.0")
     implementation(platform("software.amazon.awssdk:bom:2.16.104"))
     implementation("software.amazon.awssdk:dynamodb-enhanced") {
