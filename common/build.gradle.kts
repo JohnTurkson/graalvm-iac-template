@@ -12,7 +12,7 @@ dependencies {
     ksp("com.johnturkson.cdk:cdk-generator:0.0.3")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.6.21")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.3")
-    compileOnly("software.amazon.awscdk:aws-cdk-lib:2.23.0")
+    compileOnly("software.amazon.awscdk:aws-cdk-lib:2.24.1")
     implementation(platform("software.amazon.awssdk:bom:2.16.104"))
     implementation("software.amazon.awssdk:dynamodb-enhanced") {
         exclude("software.amazon.awssdk", "apache-client")

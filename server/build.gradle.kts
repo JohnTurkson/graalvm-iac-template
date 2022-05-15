@@ -27,9 +27,9 @@ dependencies {
     implementation("com.amazonaws:aws-lambda-java-core:1.2.1")
     implementation("com.amazonaws:aws-lambda-java-events:3.11.0")
     implementation("com.amazonaws:aws-lambda-java-runtime-interface-client:2.1.1")
-    compileOnly("software.amazon.awscdk:aws-cdk-lib:2.23.0")
-    compileOnly("software.amazon.awscdk:apigatewayv2-alpha:2.23.0-alpha.0")
-    compileOnly("software.amazon.awscdk:apigatewayv2-integrations-alpha:2.23.0-alpha.0")
+    compileOnly("software.amazon.awscdk:aws-cdk-lib:2.24.1")
+    compileOnly("software.amazon.awscdk:apigatewayv2-alpha:2.24.1-alpha.0")
+    compileOnly("software.amazon.awscdk:apigatewayv2-integrations-alpha:2.24.1-alpha.0")
     implementation(platform("software.amazon.awssdk:bom:2.16.104"))
     implementation("software.amazon.awssdk:netty-nio-client")
     implementation("software.amazon.awssdk:dynamodb-enhanced") {
